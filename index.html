@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="home.css"> 
 	<script>
 	function header_goto(pagename) {
-		document.getElementById("primary_frame")
+		document.getElementById("primary_frame").src = pagename
 	}
 	</script>
 </head>
@@ -20,10 +20,10 @@
 		<h1>ECHELON ENIGMA</h1>
 		<h2 style="font-size:14px;">Rebuilding science; reshaping the future.</h2>
 		<div class="header_bar">
-			<button class="header_button">HOME</button>
-			<button class="header_button">Fun!</button>
-			<button class="header_button">Our mission</button>
-			<button class="header_button">About us</button>
+			<button class="header_button" onclick="header_goto('/header_pages/home.html')">HOME</button>
+			<button class="header_button" onclick="header_goto('/header_pages/fun.html')">Fun!</button>
+			<button class="header_button" onclick="header_goto('/header_pages/our_mission.html')">Our mission</button>
+			<button class="header_button" onclick="header_goto('/header_pages/about_us.html')">About us</button>
 		</div>
 	</header>
 	<iframe id="primary_frame" src="/header_pages/home.html" title="Hello">
