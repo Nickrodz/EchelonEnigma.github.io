@@ -3,49 +3,30 @@
 
 <head>
 	<title>Echelon Enigma Home Page</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<style>
-		body {
-			background-color: #F0F0F0;
-		}
-		header {
-			text-align: left;
-			padding: 20px;
-			background-color: rgba(0,0,0,0.1);
-		}
-		p, img {
-			padding-left: 50px;
-			padding-right: 50px;
-			padding-bottom: 0px;
-			padding-top: 0px;
-		}
-		button {
-			background-color: #666666;
-			color: #FFFFFF;
-			border: none;
-			padding: 10px;
-		}
-		button:hover {
-			background-color: #FF6666;
-		}
-		* {
-			color: #000000;
-			font-family: "Arial", sans-serif;
-		}
-		.evil {
-			color: #FF6666;
-		}
-	</style>
+	<link rel="stylesheet" href="home.css"> 
+	<script>
+	function header_goto(pagename) {
+		document.getElementById("primary_frame")
+	}
+	</script>
 </head>
 
 <body>
 <div style="width:1000px;margin-left:auto;margin-right:auto;padding-bottom:100px;max-width:100%;background-color:#FFFFFF">
-	<header style="height:200px;">
-		<img src="images/logo.png" style="width:100px;height:100px;float:left;" alt="ECHELON ENIGMA">
+	<header>
+		<img src="/images/logo.png" style="width:100px;height:100px;float:left;" alt="ECHELON ENIGMA">
 		<h1>ECHELON ENIGMA</h1>
 		<h2 style="font-size:14px;">Rebuilding science; reshaping the future.</h2>
+		<div class="header_bar">
+			<button class="header_button">HOME</button>
+			<button class="header_button">Fun!</button>
+			<button class="header_button">Our mission</button>
+			<button class="header_button">About us</button>
+		</div>
 	</header>
+	<iframe id="primary_frame" src="/header_pages/home.html" title="Hello">
 </div>
 </body>
 
